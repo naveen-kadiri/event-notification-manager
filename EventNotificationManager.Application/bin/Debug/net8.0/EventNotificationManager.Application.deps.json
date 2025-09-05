@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EventNotificationManager.Application/1.0.0": {
+        "dependencies": {
+          "EventNotificationManager.Domain": "1.0.0"
+        },
+        "runtime": {
+          "EventNotificationManager.Application.dll": {}
+        }
+      },
+      "EventNotificationManager.Domain/1.0.0": {
+        "runtime": {
+          "EventNotificationManager.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EventNotificationManager.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EventNotificationManager.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
