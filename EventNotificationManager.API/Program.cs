@@ -8,14 +8,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<EventDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
+// builder.Services.AddDbContext<EventDbContext>(options =>
+// {
+//     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+// });
 builder.Services.AddScoped<INotificationService, NotificationService>();
-builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
+// builder.Services.AddScoped<INotificationRepository, NotificationRepository>();
 builder.Services.AddScoped<INotificationHandler, EmailNotificationHandler>();
 builder.Services.AddScoped<INotificationHandler, SmsNotificationHandler>();
+builder.Services.AddScoped<INotificationRepository, MockNotificationRepository>();
 
 var app = builder.Build();
 

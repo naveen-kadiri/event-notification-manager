@@ -1,6 +1,7 @@
 using EventNotificationManager.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
+[ApiController]
 public class NotificationController : ControllerBase
 {
     private readonly INotificationService _notificationService;
